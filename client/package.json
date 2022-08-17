@@ -1,5 +1,5 @@
 {
-  "name": "PWA Text Editor client",
+  "name": "JATE",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
