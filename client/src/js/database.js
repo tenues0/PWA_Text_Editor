@@ -17,13 +17,13 @@ export const putDb = async (content) => {
   console.log('Put to the database');
 
   // Create a connection to the database database and version we want to use.
-  const contactDb = await openDB('JATE', 1);
+  const contactDb = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = contactDb.transaction('JATE', 'readwrite');
+  const tx = contactDb.transaction('jate', 'readwrite');
 
   // Open up the desired object store.
-  const store = tx.objectStore('JATE');
+  const store = tx.objectStore('jate');
 
   // Use the .add() method on the store and pass in the content.
   const request = store.add({value: content });
@@ -38,13 +38,13 @@ export const getDb = async () => {
   console.log('GET from the database');
 
   // Create a connection to the database database and version we want to use.
-  const contactDb = await openDB('JATE', 1);
+  const contactDb = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = contactDb.transaction('JATE', 'readonly');
+  const tx = contactDb.transaction('jate', 'readonly');
 
   // Open up the desired object store.
-  const store = tx.objectStore('JATE');
+  const store = tx.objectStore('jate');
 
   // Use the .getAll() method to get all data in the database.
   const request = store.getAll();
