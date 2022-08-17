@@ -6,6 +6,9 @@
 
 This project is a PWA - Progressive Web Application - that can be run online or offline. The application is used for taking notes.
 
+![image](https://user-images.githubusercontent.com/95945750/185195476-a157bef5-666c-4b61-ac9e-e1693950c9cf.png)
+
+
 ## Table of contents
 * [usage](#Usage)
 * [contribution](#Contributing)
